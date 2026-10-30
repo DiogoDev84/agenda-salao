@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Agenda de Salão</title>
+</head>
+
+<body>
+    <header>
+        <h1>Studio Bella</h1>
+        <p>Agende seu horário de beleza.</p>
+    </header>
+    <main>
+        <section class="servicos">
+            <h2>Nossos serviços</h2>
+            <div class="card">
+                <img src="img/haircute salon.jpg" alt="Corte de cabelo">
+                <h3>Corte</h3>
+                <p>R$ 60,00</p>
+            </div>
+
+            <div class="card">
+                <img src="img/manicure.jpg" alt="Manicure">
+                <h3>Manicure</h3>
+                <p>R$ 35,00</p>
+            </div>
+
+            <div class="card">
+                <img src="img/makeup.jpg" alt="Maquiagem">
+                <h3>Maquiagem</h3>
+                <p>R$ 90,00</p>
+            </div>
+        </section>
+
+        <section class="agendamento">
+            <label for="cliente">Seu nome</label>
+            <input type="text" id="cliente" placeholder="Digite seu nome">
+
+            <label for="servico">Serviço</label>
+            <select id="servico">
+                <option value="">Escolha um serviço</option>
+                <option value="Corte">Corte - R$ 60</option>
+                <option value="Manicure"> Manicure - R$ 35</option>
+                <option value="Maquiagem"> Marquiagem - R$ 90</option>
+            </select>
+            <label for="data">Data</label>
+            <input type="date" id="data">
+
+            <label for="horario">Horário</label>
+            <input type="time" id="horario">
+
+            <button onclick="agendar()">Agendar</button>
+        </section>
+        <section class="lista">
+        <h2>Horario agendamento</h2>
+        <ul id="listaAgendamentos"></ul>
+        </section>
+        
+
+    </main>
+    <script src="index.js"></script>
+      
+</body>
+</html>
